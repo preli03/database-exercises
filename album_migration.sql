@@ -1,15 +1,11 @@
-CREATE TABLE quotes (
-                        artists VARCHAR(50),
-                        author_last_name  VARCHAR(100) NOT NULL,
-                        content TEXT NOT NULL
-);
+DROP TABLE IF EXISTS albums;
 
-CREATE TABLE `albums` (
-                          `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-                          `artist` varchar(50) DEFAULT NULL,
-                          `name` varchar(100) NOT NULL,
-                          `release_date` varchar(100) NOT NULL,
-                          `sales` varchar(100) NOT NULL,
-                          `genre` varchar(100) NOT NULL,
-                          PRIMARY KEY (`id`)
+CREATE TABLE albums (
+                          id int unsigned AUTO_INCREMENT NOT NULL,
+                          artist varchar(50),
+                          name varchar(100),
+                          release_date INT,
+                          sales FLOAT,
+                          genre varchar(100),
+                          PRIMARY KEY (id)
 )
