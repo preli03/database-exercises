@@ -1,7 +1,4 @@
-SELECT * INTO OUTFILE '/path/to/output/file.csv'
-FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
-LINES TERMINATED BY '\n'
-FROM employees;
+
 SELECT DISTINCT title FROM titles;
 
 SELECT last_name FROM employees WHERE last_name LIKE 'E%E' GROUP BY last_name;
